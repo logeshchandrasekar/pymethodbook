@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pymethodbook"
+version = "0.1.0"
+description = "A terminal-first reference tool for Python's built-in methods — curated descriptions, runnable examples, and a searchable CLI."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    { name = "Logesh Chandrasekar", email = "logeshwarchandrasekar@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/logeshchandrasekar/pymethodbook"
