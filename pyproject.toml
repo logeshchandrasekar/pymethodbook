@@ -18,7 +18,7 @@ classifiers = [
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
 ]
-dependencies = []
+dependencies = ["rich>=13.0"]
 
 [project.urls]
 Homepage = "https://github.com/logeshchandrasekar/pymethodbook"
