@@ -12,16 +12,27 @@ license = "MIT"
 authors = [
     { name = "Logesh Chandrasekar", email = "logeshwarchandrasekar@gmail.com" }
 ]
+keywords = ["python", "reference", "cli", "cheatsheet", "builtins", "documentation"]
 classifiers = [
+    "Development Status :: 3 - Alpha",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
+    "Environment :: Console",
+    "Topic :: Software Development :: Documentation",
 ]
 dependencies = ["rich>=13.0", "typer>=0.9"]
 
-[project.scripts]
-pymethodbook = "pymethodbook.cli:app"
-
 [project.urls]
 Homepage = "https://github.com/logeshchandrasekar/pymethodbook"
+Repository = "https://github.com/logeshchandrasekar/pymethodbook"
+Issues = "https://github.com/logeshchandrasekar/pymethodbook/issues"
+
+[project.scripts]
+pymethodbook = "pymethodbook.cli:app"
