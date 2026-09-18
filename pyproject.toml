@@ -18,7 +18,10 @@ classifiers = [
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
 ]
-dependencies = ["rich>=13.0"]
+dependencies = ["rich>=13.0", "typer>=0.9"]
+
+[project.scripts]
+pymethodbook = "pymethodbook.cli:app"
 
 [project.urls]
 Homepage = "https://github.com/logeshchandrasekar/pymethodbook"
