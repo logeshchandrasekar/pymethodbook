@@ -1,0 +1,68 @@
+{
+  "get": {
+    "signature": "dict.get(key, default=None)",
+    "description": "Returns the value for key if present, otherwise default, without raising an error.",
+    "example": "d = {\"a\": 1}\nd.get(\"b\", 0)\n# -> 0",
+    "category": "read-only"
+  },
+  "keys": {
+    "signature": "dict.keys()",
+    "description": "Returns a view of all keys in the dictionary.",
+    "example": "d = {\"a\": 1, \"b\": 2}\nlist(d.keys())\n# -> ['a', 'b']",
+    "category": "read-only"
+  },
+  "values": {
+    "signature": "dict.values()",
+    "description": "Returns a view of all values in the dictionary.",
+    "example": "d = {\"a\": 1, \"b\": 2}\nlist(d.values())\n# -> [1, 2]",
+    "category": "read-only"
+  },
+  "items": {
+    "signature": "dict.items()",
+    "description": "Returns a view of (key, value) pairs in the dictionary.",
+    "example": "d = {\"a\": 1}\nlist(d.items())\n# -> [('a', 1)]",
+    "category": "read-only"
+  },
+  "update": {
+    "signature": "dict.update(other)",
+    "description": "Adds key/value pairs from another dict or iterable, overwriting existing keys, in place.",
+    "example": "d = {\"a\": 1}\nd.update({\"b\": 2})\n# d -> {'a': 1, 'b': 2}",
+    "category": "mutating"
+  },
+  "pop": {
+    "signature": "dict.pop(key, default)",
+    "description": "Removes key and returns its value; returns default (or raises KeyError) if key is missing.",
+    "example": "d = {\"a\": 1, \"b\": 2}\nd.pop(\"a\")\n# -> 1, d -> {'b': 2}",
+    "category": "mutating"
+  },
+  "popitem": {
+    "signature": "dict.popitem()",
+    "description": "Removes and returns the most recently inserted (key, value) pair.",
+    "example": "d = {\"a\": 1, \"b\": 2}\nd.popitem()\n# -> ('b', 2)",
+    "category": "mutating"
+  },
+  "setdefault": {
+    "signature": "dict.setdefault(key, default=None)",
+    "description": "Returns the value for key if present; otherwise inserts key with default and returns it.",
+    "example": "d = {\"a\": 1}\nd.setdefault(\"b\", 2)\n# -> 2, d -> {'a': 1, 'b': 2}",
+    "category": "mutating"
+  },
+  "clear": {
+    "signature": "dict.clear()",
+    "description": "Removes all items from the dictionary, in place.",
+    "example": "d = {\"a\": 1}\nd.clear()\n# d -> {}",
+    "category": "mutating"
+  },
+  "copy": {
+    "signature": "dict.copy()",
+    "description": "Returns a shallow copy of the dictionary as a new, separate object.",
+    "example": "d = {\"a\": 1}\nd2 = d.copy()\n# d2 -> {'a': 1}",
+    "category": "read-only"
+  },
+  "fromkeys": {
+    "signature": "dict.fromkeys(iterable, value=None)",
+    "description": "Creates a new dict with keys from iterable, all set to the same value.",
+    "example": "dict.fromkeys(['a', 'b'], 0)\n# -> {'a': 0, 'b': 0}",
+    "category": "read-only"
+  }
+}

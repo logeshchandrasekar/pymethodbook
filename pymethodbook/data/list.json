@@ -1,0 +1,68 @@
+{
+  "append": {
+    "signature": "list.append(item)",
+    "description": "Adds a single item to the end of the list, in place.",
+    "example": "nums = [1, 2]\nnums.append(3)\n# nums -> [1, 2, 3]",
+    "category": "mutating"
+  },
+  "extend": {
+    "signature": "list.extend(iterable)",
+    "description": "Adds all items from an iterable to the end of the list, in place.",
+    "example": "nums = [1, 2]\nnums.extend([3, 4])\n# nums -> [1, 2, 3, 4]",
+    "category": "mutating"
+  },
+  "insert": {
+    "signature": "list.insert(index, item)",
+    "description": "Inserts an item at the given index, shifting later items to the right.",
+    "example": "nums = [1, 3]\nnums.insert(1, 2)\n# nums -> [1, 2, 3]",
+    "category": "mutating"
+  },
+  "remove": {
+    "signature": "list.remove(value)",
+    "description": "Removes the first item equal to value; raises ValueError if it isn't found.",
+    "example": "nums = [1, 2, 3, 2]\nnums.remove(2)\n# nums -> [1, 3, 2]",
+    "category": "mutating"
+  },
+  "pop": {
+    "signature": "list.pop(index=-1)",
+    "description": "Removes and returns the item at index (the last item by default).",
+    "example": "nums = [1, 2, 3]\nlast = nums.pop()\n# last -> 3, nums -> [1, 2]",
+    "category": "mutating"
+  },
+  "clear": {
+    "signature": "list.clear()",
+    "description": "Removes all items from the list, in place.",
+    "example": "nums = [1, 2, 3]\nnums.clear()\n# nums -> []",
+    "category": "mutating"
+  },
+  "index": {
+    "signature": "list.index(value, start=0, end=len(list))",
+    "description": "Returns the index of the first item equal to value; raises ValueError if not found.",
+    "example": "nums = [10, 20, 30]\nnums.index(20)\n# -> 1",
+    "category": "read-only"
+  },
+  "count": {
+    "signature": "list.count(value)",
+    "description": "Returns how many times value appears in the list.",
+    "example": "nums = [1, 2, 2, 3]\nnums.count(2)\n# -> 2",
+    "category": "read-only"
+  },
+  "sort": {
+    "signature": "list.sort(key=None, reverse=False)",
+    "description": "Sorts the list in place.",
+    "example": "nums = [3, 1, 2]\nnums.sort()\n# nums -> [1, 2, 3]",
+    "category": "mutating"
+  },
+  "reverse": {
+    "signature": "list.reverse()",
+    "description": "Reverses the order of the list, in place.",
+    "example": "nums = [1, 2, 3]\nnums.reverse()\n# nums -> [3, 2, 1]",
+    "category": "mutating"
+  },
+  "copy": {
+    "signature": "list.copy()",
+    "description": "Returns a shallow copy of the list as a new, separate object.",
+    "example": "nums = [1, 2, 3]\nnums2 = nums.copy()\n# nums2 -> [1, 2, 3]",
+    "category": "read-only"
+  }
+}
